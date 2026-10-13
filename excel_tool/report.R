@@ -55,7 +55,7 @@ report <- function(data_path, report_save, seg_autofind = TRUE,
       map(~pluck(.x, "vars")) %>% 
       append(other_seg_vars)
   } else {
-    seg_vars_list <- other_seg_vars
+    seg_var_list <- other_seg_vars
   }
   seg_vars_flat <- purrr::list_c(seg_var_list)
   if(is.null(weight_var)){
