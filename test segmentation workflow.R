@@ -8,9 +8,9 @@ seg_packages <- c(
 )
 invisible(lapply(seg_packages, library, character.only = TRUE))
 
-source("https://raw.githubusercontent.com/brentfuller-mra/R-segmentation-helpers/main/cluster_generation.R")
-source("https://raw.githubusercontent.com/brentfuller-mra/R-segmentation-helpers/main/cluster_evaluation.R")
-survey_data <- haven::read_sav("https://raw.githubusercontent.com/brentfuller-mra/R-segmentation-helpers/main/data_example.sav")
+source("https://raw.githubusercontent.com/fuller-mra/R-segmentation-helpers/main/cluster_generation.R")
+source("https://raw.githubusercontent.com/fuller-mra/R-segmentation-helpers/main/cluster_evaluation.R")
+survey_data <- haven::read_sav("https://raw.githubusercontent.com/fuller-mra/R-segmentation-helpers/main/data_example.sav")
 
 # input_data
 # First column = respondent ID string, remaining columns are inputs
