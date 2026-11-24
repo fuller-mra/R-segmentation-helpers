@@ -7,7 +7,7 @@ if(!"Biobase" %in% rownames(installed.packages())) {
 }
 pacman::p_load(
   dplyr, tibble, stringr, haven, assertthat, purrr, furrr, tidyr, rlang, readr,
-  NMF, archetypes, update = TRUE
+  NMF, archetypes, update = FALSE
 )
 #' Function for creating segment assignments in batch form, used to interface 
 #' with Excel tool. 
