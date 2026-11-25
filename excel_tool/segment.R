@@ -137,7 +137,8 @@ segment <- function(data_path, input_vars, id_var, kmin, kmax, algorithms,
       result
     }, 
     .options = furrr_options(
-      packages = c("dplyr", "tibble", "stringr", "stats", "archetypes", "NMF")
+      packages = c("dplyr", "tibble", "stringr", "stats", "archetypes", "NMF"),
+      seed = 123
     )
   ) %>% 
     bind_cols(id, .) %>% 
