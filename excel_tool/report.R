@@ -3,7 +3,7 @@ if(!"pacman" %in% rownames(installed.packages())) {
 }
 pacman::p_load(
   dplyr, tibble, stringr, haven, assertthat, purrr, furrr, tidyr, rlang, readr,
-  update = TRUE
+  update = F
 )
 options(dplyr.summarise.inform = FALSE)
 #' Function for creating segmentation report from Excel tool
